@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Que es para todo contido de body sea flexible */
+    display: flex;
+    /* Centra o alinea de forma vertical todos los objetos */
+    align-items: center;
+    /* Centra o alinea de forma horizontal todos los objetos */
+    justify-content: center;
+    /* Es para poner el contenido uno debajo del otro */
+    flex-direction: column;
+    /* Es para colocar el color de fondo  */
+    background: #000;
+    color: white;
+}
+
+main {
+    /* Grid Layout ofrece un sistema de maquetación basado en cuadrículas,
+    con filas y columnas, que facilita el diseño de páginas web sin tener
+    que utilizar flotadores ni posicionadores. */
+    display: grid;
+    /* Asignal a la maquetacion los espacos  */
+    grid-template-columns: repeat(3, 1fr);
+    /* Es para separar cada columna */
+    grid-gap: 20px;
+    margin: 20px 0;
+    flex-direction: column;
+    padding: 20px;
+}
+
+ul {
+    /* NO quiero que tenga estilos  */
+    list-style: none;
+}
+
+h1 {
+    /* El tamano */
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+img {
+    /* ancho */
+    width: 100%;
+    /* Altura */
+    height: 100%;
+    object-fit: cover;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
